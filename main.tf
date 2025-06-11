@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-state-wilczg"       # dokładnie jak utworzyłeś
-    key            = "lambda/terraform.tfstate"     # ścieżka w bucketcie
+    bucket         = "terraform-state-wilczg"
+    key            = "lambda/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"
     encrypt        = true

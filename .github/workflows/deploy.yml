@@ -27,9 +27,6 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: us-east-1
 
-      - name: Zip Lambda function
-        run: zip lambda_function.zip lambda_function.py
-
       - name: Terraform Init
         run: terraform init
 

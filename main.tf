@@ -16,7 +16,7 @@ resource "aws_lambda_function" "temperature_processor" {
   function_name = "temperatureProcessor"
   runtime       = "python3.12"
   handler       = "lambda_function.lambda_handler"
-  filename = "${path.module}/lambda_function.zip"
+  filename      = "./lambda_function.zip"
   timeout       = 10
   memory_size   = 128
   role          = "arn:aws:iam::136590348108:role/LabRole"

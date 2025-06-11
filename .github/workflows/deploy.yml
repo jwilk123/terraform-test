@@ -31,9 +31,6 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-
-      - name: Package Lambda function
-        run: zip lambda_function.zip lambda_function.py
  
       - name: Terraform Plan
         run: terraform plan
